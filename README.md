@@ -7,7 +7,7 @@
 ### 1. 404 Not Found
 
 > - [Challenge](https://devchallenges.io/challenges/wBunSb7FPrIepJZAg0sY)
-> - [Live Demo will go here]
+> - [Demo](https://404-not-found-liart.vercel.app/)
 
 ###### screenshot
 

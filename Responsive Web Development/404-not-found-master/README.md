@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://404-not-found-liart.vercel.app/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://github.com/nina1012/devChallenges/tree/master/Responsive%20Web%20Development/404-not-found-master">
       Solution
     </a>
     <span> | </span>
@@ -49,9 +49,12 @@ Introduce your projects by taking a screenshot or a gif. Try to tell visitors a 
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
-- [React](https://reactjs.org/)
+<!-- - [React](https://reactjs.org/)
 - [Vue.js](https://vuejs.org/)
-- [Tailwind](https://tailwindcss.com/)
+- [Tailwind](https://tailwindcss.com/) -->
+
+> - [html]
+> - [css]
 
 ## Features
 
