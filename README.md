@@ -12,3 +12,12 @@
 ###### screenshot
 
 ![screenshot](/screenshots/404-not-found-desktop.png)
+
+### 2. My team page
+
+> - [Challenge](https://devchallenges.io/challenges/hhmesazsqgKXrTkYkt0U)
+> - [Demo](https://my-team-page-navy.vercel.app/)
+
+###### screenshot
+
+![screenshot](/screenshots/my-team-page-desktop.png)
