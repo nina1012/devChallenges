@@ -1,0 +1,109 @@
+:root {
+  --bg-color: #191719;
+  --shadow-color: #131314;
+  --text-color: #ffffff; }
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  background-color: var(--bg-color);
+  box-sizing: border-box;
+  color: var(--text-color);
+  min-height: 100vh;
+  position: relative; }
+
+.container {
+  margin: 0 auto;
+  padding: 0 2rem;
+  width: 100%; }
+
+.nav {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  padding: 2rem 0; }
+  .nav .logo > span {
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    width: max-content;
+    font-size: 1.1rem;
+    font-weight: 100;
+    padding: 0.7rem 0.5rem;
+    text-transform: uppercase; }
+  .nav__button {
+    display: inline-block; }
+    .nav__button:hover {
+      cursor: pointer; }
+    .nav__button img {
+      width: 100%;
+      height: 100%; }
+  .nav__list {
+    display: none; }
+
+.main-content {
+  display: grid;
+  grid-gap: 4rem; }
+  .main-content .text-content {
+    font-family: 'Poppins'; }
+    .main-content .text-content h1 {
+      font-family: serif;
+      font-size: 4rem;
+      font-weight: 100;
+      margin-bottom: 2.5rem; }
+    .main-content .text-content p {
+      line-height: 1.15;
+      font-size: 1.5rem;
+      font-weight: 200;
+      margin-bottom: 1rem;
+      width: 20rem; }
+    .main-content .text-content .button-more {
+      font-family: sans-serif;
+      font-size: 1.8rem;
+      font-weight: 600; }
+    .main-content .text-content .arrow {
+      font-size: 3rem;
+      font-weight: 700; }
+  .main-content .image-content {
+    position: relative;
+    z-index: 1; }
+
+.main-image > img {
+  width: 100%;
+  height: auto; }
+
+.card {
+  background-color: var(--bg-color);
+  bottom: -8rem;
+  display: flex;
+  border-bottom: 2px solid var(--shadow-color);
+  flex-direction: column;
+  justify-content: space-between;
+  right: 1rem;
+  padding: 2rem 1rem;
+  position: absolute;
+  width: 29rem;
+  height: 13rem;
+  z-index: 10; }
+  .card__info {
+    display: grid;
+    grid-template-columns: 4rem 1fr;
+    grid-gap: 1rem; }
+  .card__details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; }
+  .card__img > img {
+    width: 100%;
+    border-radius: 50%; }
+  .card h3 {
+    font-size: 1.9rem; }

@@ -1,11 +1,12 @@
 {
-  "name": "my-team-page-master",
+  "name": "interior-consultant-master",
   "version": "1.0.0",
-  "description": "My team page",
+  "description": "Interior consultant page",
   "main": "index.js",
   "scripts": {
     "compile:sass": "node-sass sass/main.scss css/styles.css -w"
   },
+  "keywords": [],
   "author": "nina1012",
   "license": "ISC",
   "devDependencies": {
