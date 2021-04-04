@@ -1,29 +1,45 @@
 :root {
   --bg-color: #191719;
   --shadow-color: #131314;
-  --text-color: #ffffff; }
+  --text-color: #ffffff;
+}
 
 *,
 *::before,
 *::after {
   padding: 0;
   margin: 0;
-  box-sizing: inherit; }
+  box-sizing: inherit;
+}
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  position: relative;
+}
+@media only screen and (min-width: 1100px) {
+  html {
+    font-size: 70%;
+  }
+}
 
 body {
   background-color: var(--bg-color);
   box-sizing: border-box;
   color: var(--text-color);
   min-height: 100vh;
-  position: relative; }
+  position: relative;
+}
 
 .container {
   margin: 0 auto;
   padding: 0 2rem;
-  width: 100%; }
+  width: 100%;
+}
+@media only screen and (min-width: 1100px) {
+  .container {
+    padding: 0 8rem;
+  }
+}
 
 .nav {
   font-size: 1.8rem;
@@ -31,79 +47,222 @@ body {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 2rem;
-  padding: 2rem 0; }
-  .nav .logo > span {
-    border: 1px solid rgba(255, 255, 255, 0.8);
-    display: inline-block;
-    width: max-content;
-    font-size: 1.1rem;
-    font-weight: 100;
-    padding: 0.7rem 0.5rem;
-    text-transform: uppercase; }
+  padding: 2rem 0;
+}
+@media only screen and (min-width: 1100px) {
+  .nav {
+    padding: 4rem 0 0;
+    margin-bottom: 8rem;
+  }
+}
+.nav .logo > span {
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  display: inline-block;
+  width: max-content;
+  font-size: 1.1rem;
+  font-weight: 100;
+  padding: 0.7rem 0.5rem;
+  text-transform: uppercase;
+}
+.nav__button {
+  display: inline-block;
+  position: relative;
+  z-index: 100000;
+}
+@media only screen and (min-width: 1100px) {
   .nav__button {
-    display: inline-block; }
-    .nav__button:hover {
-      cursor: pointer; }
-    .nav__button img {
-      width: 100%;
-      height: 100%; }
+    display: none;
+  }
+}
+.nav__button:hover {
+  cursor: pointer;
+}
+.nav__button img {
+  width: 100%;
+  height: 100%;
+}
+.nav__list {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+@media only screen and (min-width: 1100px) {
   .nav__list {
-    display: none; }
+    font-family: 'Poppins';
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 50rem;
+    max-width: 40%;
+  }
+}
+.nav li {
+  display: inline-block;
+}
+@media only screen and (min-width: 1100px) {
+  .nav li {
+    height: 5rem;
+  }
+}
+.nav__link {
+  color: inherit;
+  text-decoration: none;
+  padding-bottom: 0.5rem;
+}
+@media only screen and (min-width: 1100px) {
+  .nav__link {
+    height: 5rem;
+  }
+}
+.nav__link:hover {
+  border-bottom: 3px solid white;
+}
 
 .main-content {
   display: grid;
-  grid-gap: 4rem; }
-  .main-content .text-content {
-    font-family: 'Poppins'; }
-    .main-content .text-content h1 {
-      font-family: serif;
-      font-size: 4rem;
-      font-weight: 100;
-      margin-bottom: 2.5rem; }
-    .main-content .text-content p {
-      line-height: 1.15;
-      font-size: 1.5rem;
-      font-weight: 200;
-      margin-bottom: 1rem;
-      width: 20rem; }
-    .main-content .text-content .button-more {
-      font-family: sans-serif;
-      font-size: 1.8rem;
-      font-weight: 600; }
-    .main-content .text-content .arrow {
-      font-size: 3rem;
-      font-weight: 700; }
-  .main-content .image-content {
-    position: relative;
-    z-index: 1; }
+  grid-gap: 4rem;
+  position: relative;
+  z-index: 10;
+}
+@media only screen and (min-width: 1100px) {
+  .main-content {
+    grid-template-columns: 50rem 1fr;
+    align-items: center;
+  }
+}
+.main-content .text-content {
+  font-family: 'Poppins';
+}
+.main-content .text-content h1 {
+  font-family: serif;
+  font-size: 4rem;
+  font-weight: 100;
+  margin-bottom: 2.5rem;
+}
+@media only screen and (min-width: 1100px) {
+  .main-content .text-content h1 {
+    font-size: 5rem;
+  }
+}
+.main-content .text-content p {
+  line-height: 1.15;
+  font-size: 1.5rem;
+  font-weight: 200;
+  margin-bottom: 1rem;
+  width: 20rem;
+}
+@media only screen and (min-width: 1100px) {
+  .main-content .text-content p {
+    font-size: 2rem;
+    font-weight: 300;
+    width: 30rem;
+  }
+}
+.main-content .text-content .button-more {
+  font-family: sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding-bottom: 1rem;
+  transition: 0.3s ease;
+}
+.main-content .text-content .button-more:hover {
+  cursor: pointer;
+  border-bottom: 3px solid white;
+}
+.main-content .text-content .arrow {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 700;
+  transition: 0.3s ease;
+}
+.main-content .text-content .button-more:hover .arrow {
+  transform: translateX(5px);
+}
+.main-content .image-content {
+  position: relative;
+  z-index: 1;
+}
 
 .main-image > img {
   width: 100%;
-  height: auto; }
+  height: auto;
+}
 
 .card {
   background-color: var(--bg-color);
   bottom: -8rem;
+  font-family: 'Poppins';
   display: flex;
-  border-bottom: 2px solid var(--shadow-color);
+  border-bottom: 4px solid var(--shadow-color);
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   right: 1rem;
-  padding: 2rem 1rem;
+  padding: 0.5rem 2rem;
   position: absolute;
-  width: 29rem;
-  height: 13rem;
-  z-index: 10; }
-  .card__info {
-    display: grid;
-    grid-template-columns: 4rem 1fr;
-    grid-gap: 1rem; }
-  .card__details {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly; }
-  .card__img > img {
-    width: 100%;
-    border-radius: 50%; }
-  .card h3 {
-    font-size: 1.9rem; }
+  width: 35rem;
+  max-width: 80vw;
+  height: 15rem;
+  z-index: 10;
+}
+.card__info {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  grid-gap: 2rem;
+}
+.card__details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.card__details h4 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+.card__details p {
+  font-weight: 300;
+}
+.card__img > img {
+  width: 100%;
+  border-radius: 50%;
+}
+.card h3 {
+  font-family: serif;
+  font-size: 2rem;
+  width: 70%;
+}
+
+.author {
+  font-family: 'Poppins';
+  text-align: center;
+  top: 17rem;
+  position: relative;
+  padding-bottom: 2rem;
+  width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  .author {
+    top: 10rem;
+  }
+}
+.author > a {
+  color: #ffce57;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.show {
+  background-color: var(--bg-color);
+  display: flex;
+  visibility: visible;
+  opacity: 1;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}

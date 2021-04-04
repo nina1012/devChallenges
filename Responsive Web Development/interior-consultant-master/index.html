@@ -15,7 +15,7 @@
     />
     <link
       rel="shortcut icon"
-      href="../interior-consultant-master/images/devchallenges.png"
+      href="./images/devchallenges.png"
       type="image/x-icon"
     />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -25,6 +25,7 @@
     />
     <title>Interior Consultant</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="app.js" defer></script>
   </head>
   <body>
     <div class="container">
@@ -33,17 +34,13 @@
           <span>This interior</span>
         </div>
         <div class="nav__button">
-          <img
-            class="menu-icon"
-            src="../interior-consultant-master/images/menu_black_24dp.svg"
-            alt="Menu icon"
-          />
+          <img class="menu-icon" src="./images/menu-icon.svg" alt="Icon" />
         </div>
         <ul class="nav__list">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Collection</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a class="nav__link" href="#">Home</a></li>
+          <li><a class="nav__link" href="#">Collection</a></li>
+          <li><a class="nav__link" href="#">About</a></li>
+          <li><a class="nav__link" href="#">Contact</a></li>
         </ul>
       </nav>
       <main class="main-content">
@@ -59,18 +56,12 @@
         </div>
         <div class="image-content">
           <div class="main-image">
-            <img
-              src="../interior-consultant-master/images/photo1.png"
-              alt="Interior"
-            />
+            <img src="./images/photo1.png" alt="Interior" />
           </div>
           <div class="card">
             <div class="card__info">
               <div class="card__img">
-                <img
-                  src="../interior-consultant-master/images/photo2.png"
-                  alt="User photo"
-                />
+                <img src="./images/photo2.png" alt="User photo" />
               </div>
               <div class="card__details">
                 <h4>Aliza Webber</h4>
@@ -81,6 +72,11 @@
           </div>
         </div>
       </main>
+      <div class="author">
+        created by
+        <a target="_blank" href="https://github.com/nina1012">nina1012</a> -
+        devChallenges.io
+      </div>
     </div>
   </body>
 </html>
