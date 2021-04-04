@@ -80,8 +80,6 @@ body {
   }
   &__list {
     display: none;
-    visibility: hidden;
-    opacity: 0;
     @media only screen and(min-width: 1100px) {
       font-family: 'Poppins';
       display: flex;
@@ -93,9 +91,9 @@ body {
   }
   li {
     display: inline-block;
+    height: 5rem;
 
     @media only screen and (min-width: 1100px) {
-      height: 5rem;
     }
   }
 

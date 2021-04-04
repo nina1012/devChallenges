@@ -25,7 +25,7 @@
 ### 3. Interior consultant
 
 > - [Challenge](https://devchallenges.io/challenges/Jymh2b2FyebRTUljkNcb)
-> - [Demo]()
+> - [Demo](https://interior-consultant-sandy.vercel.app/)
 
 ###### screenshot
 
